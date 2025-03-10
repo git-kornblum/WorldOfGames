@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__, template_folder="templates")
 
-@app.route("/score")
+@app.route("/")
 def score_server():
     score = None
     error = None
@@ -22,10 +22,10 @@ def score_server():
     else:
         return render_template('error.html', ERROR=error)
 
-@app.route("/")
-def start():
-    app.run(host='0.0.0.0', port=80, debug=True)
-
-
-# if __name__ == "__main__":
+# @app.route("/")
+# def start():
 #     app.run(host='0.0.0.0', port=80, debug=True)
+
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=80, debug=True)

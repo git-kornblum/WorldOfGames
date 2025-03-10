@@ -29,6 +29,3 @@ def reset_score():
     with open("./scores.txt", "w") as FILE:
         FILE.write("0")
         FILE.close()
-
-
-#reset_score()
