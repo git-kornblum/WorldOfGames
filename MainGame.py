@@ -9,4 +9,3 @@ Screen_cleaner()
 
 welcome("Guy")
 load_game()
-MainScores.start()

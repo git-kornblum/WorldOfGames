@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__, template_folder="templates")
 
-@app.route("/")
+@app.route("/score")
 def score_server():
     score = None
     error = None
